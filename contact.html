@@ -5,7 +5,7 @@
         <title>Contact Simon Schubert</title>
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="css/style.production.css">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
@@ -29,30 +29,32 @@
                 </ul>
             </nav>
         </header>
+        <main>
+            <h1 id="form-heading">Contact</h1>
 
-        <h1>Contact</h1>
+            <form action="" method="post" id="contact__form">
+                <label for="contact-email">E-mail: </label>
+                <input id="contact-email" type="email" required>
+            
+                <label for="contact-phone">Telephone: </label>
+                <input id="contact-phone" type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+            
+                <label for="contact-message">Message: </label>
+                <textarea id="contact-message" required maxlength="240"></textarea>
+            
+                <input type="submit" value="Send message">
+            </form>
 
-        <form action="" method="post" id="contact-form">
-            <label for="contact-email">E-mail: </label>
-            <input id="contact-email" type="email" required>
-          
-            <label for="contact-phone">Telephone: </label>
-            <input id="contact-phone" type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
-          
-            <label for="contact-message">Message: </label>
-            <textarea id="contact-message" required maxlength="240"></textarea>
-          
-            <input type="submit" value="Send message">
-          </form>
+            <div id="summary">
+                Pohlstraße 53 <br>
+                10785, Berlin <br>
+                Deutschland <br>
+                <br>
+                Tel: <a href="tel: +49 171 1438256">+49 171 1438256</a> <br>
+                Contact: <a href="mailto:schubert.simon@t-online.de">schubert.simon@t-online.de</a>
+            </div>
+        </main>
 
-        <div>
-            Pohlstraße 53 <br>
-            10785, Berlin <br>
-            Deutschland <br>
-            <br>
-            Tel: <a href="tel: +49 171 1438256">+49 171 1438256</a> <br>
-            Contact: <a href="mailto:schubert.simon@t-online.de">schubert.simon@t-online.de</a>
 
-        </div>
     </body>
 </html>
