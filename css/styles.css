@@ -23,6 +23,11 @@ body {
   line-height: 1.6;
 }
 
+#contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
 h1 {
   font-size: 30px;
   font-weight: 700;
